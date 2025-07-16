@@ -13,6 +13,7 @@ In the anki_instructions.md file are, who would have guessed it, [instructions f
     <img src="https://i.imgur.com/rVdBqxO.png" alt="Back Side" style="display: inline-block; width: 48%; max-width: 300px; height: auto; margin: 5px;">
 </div>
 
+
 * **🗂️ Can sort by language automatically, in ~~most~~ some cases**: (Fallback method) Automatically attempts to detect whether a book is English (`en`), French (`fr`), and Chinese/Japanese (`zh`) by consulting several simple heuristics. Scores a books name, an info in the XLSX file, for how often they have letter combinations in them of which language; For example if a books title has a "The", it's plus 1 added to the text for English flashcards, and if it has something like " l'", it's assumed to be French.
 * **⚙️ External Configuration**: Upon first launch, creates `config.json` file which allows one to manually assign languages to specific book names (or just keywords occuring in their name), overriding the automatic detection when needed.
 *But all that language detection stuff is only relevant when the xlsx file contains flashcards in several languages and you want it sorted because that would be nice.*
