@@ -7,10 +7,11 @@ THis ReadMe will also have specific instructions about how to configure Anki.
 This script is tailored specifically to the [Smartbook App]("https://smart-book.net/")! 
 If the amount of columns in the output text file for Chinese or Japanese (it does not discriminate between the two) will automatically be different than it would be for language using the roman alphabet; both the anki cards and text files are slighlty different to accomodate the extra Pinyin column.
 
-In the anki_instructions.md file are, who would have guessed it, [instructions for anki](anki_instructions.md); specifically about how to best configure Anki to have it jibe well with the output of this script and nice looking like this: ![Front Side](https://i.imgur.com/N7pJRRN.png) ![Back Side](https://i.imgur.com/rVdBqxO.png)
-
-
-## Key Features
+In the anki_instructions.md file are, who would have guessed it, [instructions for anki](anki_instructions.md); specifically about how to best configure Anki to have it jibe well with the output of this script and nice looking like this:
+<div style="text-align: center;">
+    <img src="https://i.imgur.com/N7pJRRN.png" alt="Front Side" style="display: inline-block; width: 48%; max-width: 300px; height: auto; margin: 5px;">
+    <img src="https://i.imgur.com/rVdBqxO.png" alt="Back Side" style="display: inline-block; width: 48%; max-width: 300px; height: auto; margin: 5px;">
+</div>
 
 * **🗂️ Can sort by language automatically, in ~~most~~ some cases**: (Fallback method) Automatically attempts to detect whether a book is English (`en`), French (`fr`), and Chinese/Japanese (`zh`) by consulting several simple heuristics. Scores a books name, an info in the XLSX file, for how often they have letter combinations in them of which language; For example if a books title has a "The", it's plus 1 added to the text for English flashcards, and if it has something like " l'", it's assumed to be French.
 * **⚙️ External Configuration**: Upon first launch, creates `config.json` file which allows one to manually assign languages to specific book names (or just keywords occuring in their name), overriding the automatic detection when needed.
@@ -51,7 +52,9 @@ pip install pandas openpyxl
 4.  **Handle Quotes (If any)**: If the script finds cards marked as `parenthesis`, it will ask if you want to separate them. Type `y` (yes) or `n` (no) and press Enter.
 5.  **Done!**: The script will process your file and create a new folder named `flashcard_output_[timestamp]` containing your clean `.txt` files.
 
-![output_example]([https://i.imgur.com/g8vU4k5.png](https://imgur.com/a/rCsAqxv))
+<div style="width: 100%; text-align: center;">
+    <img src="https://i.imgur.com/a3xxFAW.png" alt="Output example" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 ## 🛠️ Configuration (Optional)
 
